@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sorry Anyaa Ji 💔</title>
+  <style>
+    body {
+      background-color: #fff0f3;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #d32f2f;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .emoji {
+      font-size: 4em;
+      animation: shake 1s infinite;
+    }
+
+    p {
+      font-size: 1.3em;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(1deg); }
+      50% { transform: rotate(-1deg); }
+      75% { transform: rotate(1deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    img {
+      max-width: 250px;
+      margin: 20px 0;
+    }
+
+    .forgive-button {
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .forgive-button:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="sad-song.mp3" type="audio/mpeg">
+  </audio>
+  <div class="emoji">😭🙏</div>
+  <h1>Sorry Anyaa Ji 💔</h1>
+  <p>
+    Ab se aapko bhoot waali reel nhi bhejunga...<br>
+    Per pakad raha hoon... Maaf kar do please 😭😭😭<br><br>
+    I'm extremely sorry aapko hurt karna mera irada nhi tha,<br>
+    bas glti se wo reel bhej diya maine.
+  </p>
+  <img src="https://i.imgur.com/7RPOzHd.png" alt="Sad Cartoon Image">
+  <button class="forgive-button" onclick="alert('Thank you for forgiving me Anyaa Ji ❤️')">Forgive Me?</button>
+</body>
+</html>
