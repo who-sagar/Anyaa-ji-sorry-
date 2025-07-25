@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,23 +20,19 @@
       text-align: center;
       color: #d32f2f;
     }
-
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
     }
-
     .emoji {
       font-size: 4em;
       animation: shake 1s infinite;
     }
-
     p {
       font-size: 1.3em;
       max-width: 600px;
       line-height: 1.6;
     }
-
     @keyframes shake {
       0% { transform: rotate(0deg); }
       25% { transform: rotate(1deg); }
@@ -43,12 +40,6 @@
       75% { transform: rotate(1deg); }
       100% { transform: rotate(0deg); }
     }
-
-    img {
-      max-width: 250px;
-      margin: 20px 0;
-    }
-
     .forgive-button {
       background-color: #d32f2f;
       color: white;
@@ -58,17 +49,14 @@
       border-radius: 10px;
       cursor: pointer;
       transition: background-color 0.3s;
+      margin: 10px;
     }
-
     .forgive-button:hover {
       background-color: #b71c1c;
     }
   </style>
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="sad-song.mp3" type="audio/mpeg">
-  </audio>
   <div class="emoji">😭🙏</div>
   <h1>Sorry Anyaa Ji 💔</h1>
   <p>
@@ -77,7 +65,10 @@
     I'm extremely sorry aapko hurt karna mera irada nhi tha,<br>
     bas glti se wo reel bhej diya maine.
   </p>
-  <img src="https://i.imgur.com/7RPOzHd.png" alt="Sad Cartoon Image">
   <button class="forgive-button" onclick="alert('Thank you for forgiving me Anyaa Ji ❤️')">Forgive Me?</button>
+  <button class="forgive-button" onclick="document.getElementById('bg-music').play()">Play Sad Song</button>
+  <audio id="bg-music" loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
 </body>
 </html>
